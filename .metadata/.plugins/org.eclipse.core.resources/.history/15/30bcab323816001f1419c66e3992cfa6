@@ -29,12 +29,10 @@ public class Principal {
 		
 		Cofrinho cofrinho = new Cofrinho();
 		
-		
-		/*cofrinho.adicionar(real);
+		cofrinho.adicionar(real);
 		cofrinho.adicionar(euro);
 		cofrinho.adicionar(dolar);
-		*/
-		System.out.println();
+		
 		cofrinho.listagemMoedas();
 		
 

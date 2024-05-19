@@ -20,11 +20,16 @@ public class Cofrinho {
 		this.listaMoedas.remove(moeda);
 	}
 	
-	public void listagemMoedas() {		
+	public void listagemMoedas() {
+		
+		System.out.println("ante do if"); 
 		if(listaMoedas.isEmpty()) {
-			System.out.println("Não tem moedas!!!!!!");
+			System.out.println("oi");
 			return;
 		}
+		
+		System.out.println("Depois do if");
+		
 		for(Moeda moeda : listaMoedas) {
 			moeda.info();
 		}		

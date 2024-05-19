@@ -19,14 +19,4 @@ public class Cofrinho {
 	public void remover(Moeda moeda) {
 		this.listaMoedas.remove(moeda);
 	}
-	
-	public void listagemMoedas() {		
-		if(listaMoedas.isEmpty()) {
-			System.out.println("Não tem moedas!!!!!!");
-			return;
-		}
-		for(Moeda moeda : listaMoedas) {
-			moeda.info();
-		}		
-	}
 }

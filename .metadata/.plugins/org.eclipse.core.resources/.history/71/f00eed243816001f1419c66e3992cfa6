@@ -26,17 +26,6 @@ public class Principal {
 		
 		System.out.println("Convertido " + dolar.converte());
 		
-		
-		Cofrinho cofrinho = new Cofrinho();
-		
-		
-		/*cofrinho.adicionar(real);
-		cofrinho.adicionar(euro);
-		cofrinho.adicionar(dolar);
-		*/
-		System.out.println();
-		cofrinho.listagemMoedas();
-		
 
 	}
 
