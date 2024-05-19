@@ -7,12 +7,12 @@ public class Real extends Moeda{
 	}
 
 	@Override
-	public void info() {
+	void info() {
 		System.out.println("Real - " + valor);
 	}
 
 	@Override
-	public double converte() {
+	double converte() {
 		return this.valor ;
 	}
 

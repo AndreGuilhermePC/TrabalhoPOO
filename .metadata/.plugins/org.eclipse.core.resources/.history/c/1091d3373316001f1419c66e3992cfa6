@@ -4,7 +4,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		Moeda real = new Real(30);
+		Moeda real = new Real(0);
 		
 		real.info();
 		

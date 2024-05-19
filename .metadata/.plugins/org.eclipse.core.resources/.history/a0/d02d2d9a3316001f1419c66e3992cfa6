@@ -7,8 +7,8 @@ public abstract class Moeda {
 		this.valor = valor;
 	}
 
-	public abstract void info();
+	abstract void info();
 	
-	public abstract double converte();
+	abstract double converte();
 
 }
