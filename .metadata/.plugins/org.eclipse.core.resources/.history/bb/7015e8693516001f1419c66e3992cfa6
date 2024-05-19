@@ -18,13 +18,7 @@ public class Principal {
 		
 		System.out.println("Convertido " + euro.converte());
 		
-		System.out.println();
 		
-		Moeda dolar = new Dolar(30);
-		
-		dolar.info();
-		
-		System.out.println("Convertido " + dolar.converte());
 		
 
 	}
