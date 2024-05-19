@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\Andre\Desktop\Faculdade\Uninter\PROGRAMAÇÃO ORIENTADA A OBJETOS\Traballho\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3075033492.index
+1976894915.index
