@@ -17,4 +17,19 @@ public class Dolar extends Moeda{
 		return valor * 5.10;
 	}
 
+	@Override
+	public boolean equals(Object objeto) {
+		// Verifica se são da mesma classe
+		if(this.getClass() != objeto.getClass()) {
+			return false;
+		}
+			
+		//Se os valores são iguais
+		Dolar objetoDeDolar = (Dolar) objeto;
+		if(this.valor != objetoDeDolar.valor) {
+			return false;
+		}
+		return true;
+	}
+
 }

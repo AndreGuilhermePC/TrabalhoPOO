@@ -1,0 +1,54 @@
+package uninter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cofrinho {
+	private List<Moeda> listaMoedas;
+
+	public Cofrinho() {
+		this.listaMoedas = new ArrayList<Moeda>();
+	}
+	
+	public void adicionar(Moeda moeda) {
+		this.listaMoedas.add(moeda);
+	}
+	
+	public void remover(Moeda moeda) {
+		this.listaMoedas.remove(moeda);
+	}
+	
+	public void listagemMoedas() {	
+		//Verifica se a lista esta vazia
+		/*if(listaMoedas.isEmpty()) {
+			System.out.println("Não existe nem uma moeda no cofrinho!!!!!!");
+			return;
+		}*/
+		
+		verificaSeListaEstaVazia();
+		for(Moeda moeda : listaMoedas) {
+			moeda.info();
+		}		
+	}
+	
+	public double totalConvertido() {
+		if(this.listaMoedas.isEmpty()) {
+			return 0;
+		}
+		
+		double valorTotal = 0; 
+		
+		for(Moeda moeda : listaMoedas) {
+			valorTotal += moeda.converte();
+		}
+		
+		return valorTotal;
+	}
+	
+	private void verificaSeListaEstaVazia() {
+		if(listaMoedas.isEmpty()) {
+			System.out.println("Não existe nem uma moeda no cofrinho!!!!!!");
+			return;
+		}
+	}
+}

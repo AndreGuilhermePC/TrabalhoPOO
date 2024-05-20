@@ -10,23 +10,38 @@ public class Cofrinho {
 		this.listaMoedas = new ArrayList<Moeda>();
 	}
 	
-	// metodo para adicionar da lista
 	public void adicionar(Moeda moeda) {
 		this.listaMoedas.add(moeda);
 	}
 	
-	// metodo para remover da lista
 	public void remover(Moeda moeda) {
 		this.listaMoedas.remove(moeda);
 	}
 	
-	public void listagemMoedas() {		
-		if(listaMoedas.isEmpty()) {
-			System.out.println("Não tem moedas!!!!!!");
-			return;
-		}
+	public void listagemMoedas() {	
+		verificaSeAListaEstaVazia();
+		
 		for(Moeda moeda : listaMoedas) {
 			moeda.info();
 		}		
+	}
+	
+	public double totalConvertido() {
+		verificaSeAListaEstaVazia();
+		
+		double valorTotal = 0; 
+		
+		for(Moeda moeda : listaMoedas) {
+			valorTotal += moeda.converte();
+		}
+		
+		return valorTotal;
+	}
+	
+	private void verificaSeAListaEstaVazia() {
+		if(listaMoedas.isEmpty()) {
+			System.out.println("Não existe nem uma moeda no cofrinho!!!!!!");
+			return;
+		}
 	}
 }
